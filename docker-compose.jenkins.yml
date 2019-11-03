@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nginx:
+    container_name: jenkins_demo
+    image: jenkins_demo:20191103_141600
+    volumes:
+     - /data0/jenkins_demo/nginx_log:/data0/nginx_log
+    privileged: true    
+    ports:
+      - 8099:80
+    command: nginx -g "daemon off;"
