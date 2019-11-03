@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx:
     container_name: jenkins_demo
-    image: jenkins_demo:20191103_141600
+    image: jenkins_demo:20191103_151210
     volumes:
      - /data0/jenkins_demo/nginx_log:/data0/nginx_log
     privileged: true    
